@@ -1,0 +1,55 @@
+* { box-sizing: border-box;}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#calculator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #9e5983;
+    gap: 1em;
+    width: 20em;
+}
+
+.display {
+    width: inherit;
+    min-height: 50px;
+    font-family: sans-serif;
+    font-size: 2em;
+    color: #ffffff;
+    overflow: hidden;
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-weight: bolder;
+}
+
+.buttonsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: inherit;
+}
+
+button {
+    flex-basis: 25%;
+    min-height: 5em;
+}
+
+button[name='0']{
+    flex-grow: 1;
+}
+
+.deleteWrapper{
+    display: flex;
+    width: inherit;
+}
+
+.deleteWrapper > button{
+    flex-basis: 50%;
+}
